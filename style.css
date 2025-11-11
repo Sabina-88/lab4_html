@@ -1,3 +1,4 @@
+/* ====== Скидання ====== */
 * {
   margin: 0;
   padding: 0;
@@ -5,84 +6,144 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+  background: #ffffff;
+  color: #fff;
+  overflow-x: hidden;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px;
-}
-
-/* Верхня частина */
+/* ====== Верхній header ====== */
 .header {
+  background: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 15px 30px;
+  height: 64px;
+  padding: 0 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-.logo img {
-  height: 40px;
+.logo {
+  height: 48px;
+  margin-right: auto;
+  position: relative;
+  left: 120px;
 }
 
 .burger {
-  font-size: 30px;
+  font-size: 28px;
+  color: #333;
   cursor: pointer;
+  position: absolute;
+  right: 40px;
 }
 
-/* Головний синій блок */
-.main {
+/* ====== HERO ====== */
+.hero {
+  position: relative;
+  background-color: #013ECC;
+  height: 560px;
+  overflow: hidden;
+}
+
+/* Контент усередині hero */
+.content {
+  position: relative;
+  padding-left: 160px;
+  padding-top: 50px;
+  max-width: 650px;
+}
+
+/* Лейбл */
+.label {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  opacity: 0.85;
+  margin-bottom: 10px;
+}
+
+/* Заголовок */
+h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.05;
+  color: #fff;
+  max-width: 600px;
+  margin-bottom: 24px;
+  white-space: pre-line;
+}
+
+/* ====== Картки ====== */
+.cards {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #005fbb;
-  color: white;
-  padding: 50px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
-.main .text {
-  width: 50%;
-}
-
-.main .image img {
-  width: 350px;
-}
-
-/* Нижні блоки */
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  gap: 20px;
+  gap: 24px;
+  margin-top: 16px;
 }
 
 .card {
-  flex: 1;
-  padding: 20px;
-  color: white;
-  border-radius: 10px;
+  width: 280px;
+  height: 280px;
+  background: #344FA8;
+  border-radius: 4px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.03);
+  padding: 34px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   text-align: center;
 }
 
-.card-left {
-  background: #ff7b00;
-}
-
-.card-right {
-  background: #ff0090;
-}
-
 .card img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 15px;
+  width: 60px;
+  margin-bottom: 18px;
 }
 
 .card h3 {
+  color: #F08A3F;
+  font-size: 18px;
+  font-weight: 700;
   margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 14px;
+}
+
+.card a {
+  font-size: 12px;
+  color: #F08A3F;
+  text-decoration: underline;
+  text-transform: lowercase;
+}
+
+/* ====== Зображення ноутбука ====== */
+.laptop {
+  position: absolute;
+  right: 160px;
+  top: 230px;
+  width: 400px;
+  transform: rotate(-15deg) translateY(20px);
+  z-index: 2;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.25));
+}
+
+/* ====== Футер ====== */
+.footer {
+  background: #333;
+  color: #ccc;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 20px;
+  line-height: 1.5;
 }

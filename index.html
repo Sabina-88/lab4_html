@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лабораторна робота №4 — Варіант 1</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лабораторна 4</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
+  <!-- Верхня біла смуга -->
+  <header class="header">
+    <img src="img/logo.png" alt="Logo" class="logo" />
+    <div class="burger">&#9776;</div>
+  </header>
 
-    <!-- Верхня частина -->
-    <header class="header">
-      <div class="logo">
-        <img src="img/logo.png" alt="Logo">
-      </div>
-      <div class="burger">&#9776;</div> <!-- ☰ -->
-    </header>
+  <!-- Основний синій блок -->
+  <section class="hero">
+    <div class="content">
+      <p class="label">FEATURES</p>
+      <h1>Using design to improve 
+        product development</h1>
 
-    <!-- Головний блок із ноутбуком -->
-    <section class="main">
-      <div class="text">
-        <h1>Work process</h1>
-        <p>We help your business to grow and expand your brand.</p>
-      </div>
-      <div class="image">
-        <img src="img/laptop.png" alt="Laptop">
-      </div>
-    </section>
+      <div class="cards">
+        <div class="card">
+          <img src="img/strategy.png" alt="Strategy icon">
+          <h3>Strategy</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br>
+            adipiscing elit. Praesent vel tortor facilisis.
+          </p>
+          <a href="#">more</a>
+        </div>
 
-    <!-- Нижній блок із двома кольоровими квадратами -->
-    <section class="bottom">
-      <div class="card card-left">
-        <img src="img/strategy.png" alt="Strategy">
-        <h3>Strategy</h3>
-        <p>We build effective plans for your company.</p>
+        <div class="card">
+          <img src="img/concept.png" alt="Concept icon">
+          <h3>Concept</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br>
+            adipiscing elit. Praesent vel tortor facilisis.
+          </p>
+          <a href="#">more</a>
+        </div>
       </div>
+    </div>
 
-      <div class="card card-right">
-        <img src="img/concept.png" alt="Concept">
-        <h3>Concept</h3>
-        <p>We create and develop fresh ideas for your business.</p>
-      </div>
-    </section>
+    <!-- Ноутбук праворуч -->
+    <img src="img/laptop.png" alt="Laptop" class="laptop">
+  </section>
 
-  </div>
+  <!-- Нижній сірий футер -->
+  <footer class="footer">
+    <p>Sample text. Click to select the text box. Click again or double
+         click to start editing the text.</p>
+  </footer>
 </body>
 </html>

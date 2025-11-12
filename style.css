@@ -147,3 +147,44 @@ h1 {
   padding: 10px 20px;
   line-height: 1.5;
 }
+
+/* ====== Адаптивна верстка ====== */
+@media (max-width: 768px) {
+  .content {
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 85%;
+    height: auto;
+    padding: 24px 20px;
+  }
+
+  .laptop {
+    display: none; /* приховуємо ноутбук */
+  }
+
+  .logo {
+    height: 36px;
+    left: 0;
+  }
+
+  .footer {
+    font-size: 10px;
+    padding: 6px;
+  }
+}

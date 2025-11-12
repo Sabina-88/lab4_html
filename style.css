@@ -52,6 +52,8 @@ body {
   padding-left: 160px;
   padding-top: 50px;
   max-width: 650px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Лейбл */
@@ -238,6 +240,7 @@ h1 {
   transform: scale(1.2);
   color: #F08A3F;
 }
+
 
 
 

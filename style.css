@@ -171,6 +171,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    order: 3;
   }
 
   .card {
@@ -180,12 +181,13 @@ h1 {
   }
 
   .laptop {
-  position: static;
+  position: relative;
   display: block;
   width: 80%;
   margin: 20px auto;
   transform: none;
   filter: none;
+  order: 2;
   }
 
   .logo {
@@ -232,5 +234,6 @@ h1 {
   transform: scale(1.2);
   color: #F08A3F;
 }
+
 
 

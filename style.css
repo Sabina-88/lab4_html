@@ -180,7 +180,12 @@ h1 {
   }
 
   .laptop {
-    display: none; /* приховуємо ноутбук */
+  position: static;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  transform: none;
+  filter: none;
   }
 
   .logo {
@@ -227,4 +232,5 @@ h1 {
   transform: scale(1.2);
   color: #F08A3F;
 }
+
 

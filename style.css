@@ -52,8 +52,6 @@ body {
   padding-left: 160px;
   padding-top: 50px;
   max-width: 650px;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Лейбл */
@@ -152,11 +150,11 @@ h1 {
 
 /* ====== Адаптивна верстка ====== */
 @media (max-width: 768px) {
-  .hero {
+    .hero {
     height: auto;
     padding-bottom: 40px;
   }
-  
+
   .content {
     padding-left: 40px;
     padding-right: 40px;
@@ -173,7 +171,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    order: 3;
   }
 
   .card {
@@ -183,14 +180,7 @@ h1 {
   }
 
   .laptop {
-  display: block;
-  position: absolute;
-  top: 320px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70%;
-  filter: drop-shadow(0 6px 10px rgba(0,0,0,0.2));
-  z-index: 1;
+    display: none; /* приховуємо ноутбук */
   }
 
   .logo {
@@ -202,10 +192,6 @@ h1 {
     font-size: 10px;
     padding: 6px;
   }
-
-  .label, h1 {
-    order: 1;
-    }
 }
 
 /* ====== Ефекти наведення ====== */
@@ -241,9 +227,3 @@ h1 {
   transform: scale(1.2);
   color: #F08A3F;
 }
-
-
-
-
-
-

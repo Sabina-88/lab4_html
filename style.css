@@ -150,6 +150,11 @@ h1 {
 
 /* ====== Адаптивна верстка ====== */
 @media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  
   .content {
     padding-left: 40px;
     padding-right: 40px;
@@ -222,3 +227,4 @@ h1 {
   transform: scale(1.2);
   color: #F08A3F;
 }
+
